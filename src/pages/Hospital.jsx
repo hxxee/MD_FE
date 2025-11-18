@@ -16,35 +16,37 @@ const Hospital = () => {
 
       <H.Content>
         <H.Component>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-              width: "100%",
-            }}
-          >
-            <div id="title">병원예약</div>
-            <img src={`${process.env.PUBLIC_URL}/images/Hospital.svg`} alt="hospital" />
-          </div>
-
-          <div id="btn">예약하기</div>
+          <H.C_title>경북대학교병원</H.C_title>
+          <H.C_sub>정형외과</H.C_sub>
+          <H.C_wrapper>
+            <H.C_inform>
+              <img id="clock" src={`${process.env.PUBLIC_URL}/images/clock.svg`} alt="back" />
+              9월 20일
+            </H.C_inform>
+            <H.C_inform>
+              <img id="clock" src={`${process.env.PUBLIC_URL}/images/Calendar.svg`} alt="back" />
+              10:00 - 12:00 AM
+            </H.C_inform>
+          </H.C_wrapper>
+          <H.Divider />
+          <H.C_btn id="btn">예약하기</H.C_btn>
         </H.Component>
 
         <H.Component>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-              width: "100%",
-            }}
-          >
-            <div id="title">교통예약</div>
-            <img src={`${process.env.PUBLIC_URL}/images/Bus.svg`} alt="bus" />
-          </div>
-
-          <div id="btn">예약하기</div>
+          <H.C_title>경북대학교병원</H.C_title>
+          <H.C_sub>정형외과</H.C_sub>
+          <H.C_wrapper>
+            <H.C_inform>
+              <img id="clock" src={`${process.env.PUBLIC_URL}/images/clock.svg`} alt="back" />
+              9월 20일
+            </H.C_inform>
+            <H.C_inform>
+              <img id="clock" src={`${process.env.PUBLIC_URL}/images/Calendar.svg`} alt="back" />
+              10:00 - 12:00 AM
+            </H.C_inform>
+          </H.C_wrapper>
+          <H.Divider />
+          <H.C_btn id="btn">예약하기</H.C_btn>
         </H.Component>
       </H.Content>
     </H.Container>
