@@ -5,6 +5,11 @@ import { useNavigate } from "react-router-dom";
 const Appointment = () => {
   const navigate = useNavigate();
 
+  const goHos = () => navigate(`/hospital`);
+  const goHome = () => navigate(`/home`);
+  const goBack = () => navigate(-1);
+  const goMy = () => navigate(`/my`);
+
   return (
     <A.Container>
       <A.Header>
@@ -28,7 +33,9 @@ const Appointment = () => {
             <img src={`${process.env.PUBLIC_URL}/images/Hospital.svg`} alt="hospital" />
           </div>
 
-          <A.C_btn id="btn">예약하기</A.C_btn>
+          <A.C_btn id="btn" onClick={goHos}>
+            예약하기
+          </A.C_btn>
         </A.Component>
 
         <A.Component>

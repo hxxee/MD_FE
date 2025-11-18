@@ -4,131 +4,137 @@ export const Container = styled.div`
   position: relative;
   margin: 0 auto;
   margin-top: 0px;
-  height: 100vh;
+  min-height: 100dvh;
   padding: 0; /* 불필요한 패딩 제거 */
   box-sizing: border-box; /* 패딩이 width에 포함되도록 설정 */
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 393px;
-  min-width: 320px;
   flex-shrink: 0;
-  overflow: visible;
   align-items: center;
   background: #eef2f7;
+  padding-bottom: 130px;
 `;
 
 export const Header = styled.div`
   display: flex;
   height: 60px;
   padding: 9px 6px;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
+  gap: 101px;
+  flex-shrink: 0;
   align-self: stretch;
   background: #002159;
-`;
+  margin-bottom: 22px;
 
-export const Title = styled.div`
-  display: flex;
-  align-items: center;
+  img {
+    width: 41px;
+    height: 41px;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+  }
 
-  color: #fff;
-  leading-trim: both;
-  text-edge: cap;
-  font-family: "Gmarket Sans TTF";
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 89px; /* 342.308% */
-`;
-
-export const Icons = styled.div`
-  display: flex;
-  position: absolute;
-  gap: 20px;
-  align-items: center;
-  left: 10px;
-`;
-
-export const Content = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  gap: 90px;
-`;
-
-export const Component = styled.div`
-  display: flex;
-  width: 300px;
-  padding: 24px;
-  flex-direction: column;
-  gap: 10px;
-  border-radius: 20px;
-  background: #fff;
-  box-shadow: 5.039px 30.233px 50.388px 0 rgba(90, 117, 167, 0.04);
-
-  #discription {
-    align-self: stretch;
-    color: #8696bb;
+  #detail {
+    color: #fff;
+    leading-trim: both;
+    text-edge: cap;
     font-family: "Gmarket Sans TTF";
-    font-size: 10px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: 89px; /* 342.308% */
   }
 `;
 
-export const C_title = styled.div`
-  color: #000;
-  font-family: "Gmarket Sans TTF";
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+export const Btn = styled.div`
+  margin-top: 40px;
+  display: flex;
+  height: 220px;
+  padding: 0 20px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 333px;
+  height: 180px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 4.251px 25.503px 42.505px 0 rgba(90, 117, 167, 0.04);
+
+  #img1 {
+    width: 140px;
+    height: 140px;
+    aspect-ratio: 1/1;
+  }
+
+  #img2 {
+    width: 130px;
+    height: 130px;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+  }
 `;
 
-export const C_sub = styled.div`
-  color: #8696bb;
-  font-family: "Gmarket Sans TTF";
-  font-size: 45px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-`;
-
-export const C_wrapper = styled.div`
+export const Det = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: start;
+  width: 145px;
+  justify-content: space-between;
+  height: 140px;
 `;
 
-export const C_btn = styled.div`
+export const Text = styled.div`
   display: flex;
-  padding: 8px;
-  justify-content: center;
-  align-items: center;
-  align-self: stretch;
-  border-radius: 10px;
-  background: rgba(99, 180, 255, 0.1);
+  flex-direction: column;
+  gap: 12px;
 
-    color: #4894fe;
+  #name {
+    color: #002159;
+    font-family: "Gmarket Sans TTF";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+  }
+
+  #detail {
+    color: #002159;
+    font-family: "Gmarket Sans TTF";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 133.333% */
+    text-align: left;
+  }
+`;
+
+export const Button = styled.div`
+  width: 145px;
+  display: flex;
+  height: 34px;
+  padding: 10px 28px;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  border-radius: 10px;
+  background: #002159;
+
+  div {
+    color: #fff;
+    text-align: center;
     font-family: "Gmarket Sans TTF";
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
-    line-height: 110%; /* 16.5px */
+    margin-top: 2px;
   }
 
-  #title {
-    color: #000;
-    font-family: "Gmarket Sans TTF";
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+  img {
+    width: 21px;
+    height: 9.5px;
   }
 `;
 
