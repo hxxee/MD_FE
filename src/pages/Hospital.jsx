@@ -17,7 +17,7 @@ const Hospital = () => {
         <H.Icons>
           <img
             id="back"
-            src={`${process.env.PUBLIC_URL}/images/back.svg`}
+            src={`${process.env.PUBLIC_URL}/images/Back.svg`}
             alt="back"
             onClick={goBack}
           />
@@ -33,7 +33,7 @@ const Hospital = () => {
             <H.C_inform>
               <img
                 id="clock"
-                src={`${process.env.PUBLIC_URL}/images/clock.svg`}
+                src={`${process.env.PUBLIC_URL}/images/Clock.svg`}
                 alt="back"
               />
               9월 20일
@@ -60,7 +60,7 @@ const Hospital = () => {
             <H.C_inform>
               <img
                 id="clock"
-                src={`${process.env.PUBLIC_URL}/images/clock.svg`}
+                src={`${process.env.PUBLIC_URL}/images/Clock.svg`}
                 alt="back"
               />
               9월 20일
@@ -85,7 +85,7 @@ const Hospital = () => {
             <H.C_inform>
               <img
                 id="clock"
-                src={`${process.env.PUBLIC_URL}/images/clock.svg`}
+                src={`${process.env.PUBLIC_URL}/images/Clock.svg`}
                 alt="back"
               />
               9월 27일
