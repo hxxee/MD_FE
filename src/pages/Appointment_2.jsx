@@ -32,7 +32,7 @@ const Appointment_2 = () => {
             <A.Info>진료가능시간: 오전 10시 ~ 12시</A.Info>
           </A.Info_wrapper>
         </A.Component>
-        <A.C_btn>병원 예약하기</A.C_btn>
+        <A.C_btn onClick={() => navigate(`/appointment/hospital/complete`)}>병원 예약하기</A.C_btn>
       </A.Content>
 
       <A.Nav>

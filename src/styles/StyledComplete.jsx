@@ -76,24 +76,16 @@ export const Content = styled.div`
 
 export const Component = styled.div`
   display: flex;
-  width: 300px;
-  padding: 24px;
+  padding: 20px;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   gap: 10px;
-  margin: 40px 0;
+
+  margin-top: 30px;
   border-radius: 20px;
   background: #fff;
   box-shadow: 5.039px 30.233px 50.388px 0 rgba(90, 117, 167, 0.04);
-
-  #discription {
-    align-self: stretch;
-    color: #8696bb;
-    font-family: "Gmarket Sans TTF";
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
 `;
 
 export const C_title = styled.div`
@@ -105,45 +97,113 @@ export const C_title = styled.div`
   line-height: normal;
 `;
 
-export const C_sub = styled.div`
-  color: #8696bb;
+export const C_btn = styled.div`
+  display: flex;
+  width: 283px;
+  height: 64px;
+  padding: 15px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: rgba(99, 180, 255, 0.1);
+  margin: 10px 0;
+
+  color: #4894fe;
   font-family: "Gmarket Sans TTF";
-  font-size: 45px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 110%; /* 24.2px */
 `;
 
-export const C_wrapper = styled.div`
+export const btn1 = styled.div`
+  display: flex;
+  width: 153px;
+  height: 48px;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: rgba(99, 180, 255, 0.1);
+
+  color: #4894fe;
+  font-family: "Gmarket Sans TTF";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; /* 22px */
+`;
+
+export const btn2 = styled.div`
+  display: flex;
+  width: 153px;
+  height: 48px;
+  padding: 15px 19px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #002159;
+
+  color: #fff;
+  font-family: "Gmarket Sans TTF";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; /* 22px */
+`;
+
+export const Info_wrapper = styled.div`
   display: flex;
   flex-direction: column;
 `;
 
-export const C_btn = styled.div`
-  display: flex;
-  padding: 8px;
-  justify-content: center;
-  align-items: center;
-  align-self: stretch;
-  border-radius: 10px;
-  background: rgba(99, 180, 255, 0.1);
+export const Info = styled.div`
+  color: #000;
+  font-family: "Gmarket Sans TTF";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 
-    color: #4894fe;
+  &.check {
+    color: #000;
     font-family: "Gmarket Sans TTF";
     font-size: 15px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 110%; /* 16.5px */
-  }
-
-  #title {
-    color: #000;
-    font-family: "Gmarket Sans TTF";
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: normal;
   }
+`;
+
+export const InfoRow = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+`;
+
+export const InfoLeft = styled.div`
+  font-family: "Gmarket Sans TTF";
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+`;
+
+export const InfoRight = styled.div`
+  font-family: "Gmarket Sans TTF";
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+`;
+
+export const Divider = styled.div`
+  width: 249px;
+  height: 2px;
+  background: rgba(86, 120, 255, 0.5);
+  margin: 10px 0;
 `;
 
 export const Nav = styled.div`

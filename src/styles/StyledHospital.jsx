@@ -56,9 +56,22 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding: 20px;
+  margin: 20px 0;
+  gap: 20px;
   flex: 1;
-  gap: 42px;
+
+  overflow-y: auto;
+  padding-bottom: 90px;
+  -webkit-overflow-scrolling: touch; /* 모바일 부드러운 스크롤 */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE, Edge */
 `;
 
 export const Component = styled.div`
@@ -66,7 +79,7 @@ export const Component = styled.div`
   width: 300px;
   padding: 24px;
   flex-direction: column;
-  gap: 10px;
+
   border-radius: 20px;
   background: #fff;
   box-shadow: 5.039px 30.233px 50.388px 0 rgba(90, 117, 167, 0.04);
@@ -145,7 +158,7 @@ export const Divider = styled.div`
   width: 100%;
   height: 2px;
   background: #f5f5f5;
-  margin: 5px 0;
+  margin: 10px 0;
 `;
 
 export const Nav = styled.div`
@@ -184,4 +197,25 @@ export const Comp = styled.div`
     font-style: normal;
     font-weight: 700;
   }
+`;
+
+export const Destination = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 21px 42px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 5.039px 30.233px 50.388px 0 rgba(90, 117, 167, 0.04);
+
+  color: #000;
+  font-family: "Gmarket Sans TTF";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 `;

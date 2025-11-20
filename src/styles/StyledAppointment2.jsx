@@ -56,9 +56,20 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding: 20px;
   flex: 1;
-  gap: 70px;
+
+  overflow-y: auto;
+  padding-bottom: 90px;
+  -webkit-overflow-scrolling: touch; /* 모바일 부드러운 스크롤 */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE, Edge */
 `;
 
 export const Component = styled.div`
@@ -68,6 +79,7 @@ export const Component = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  margin: 75px 0;
   gap: 10px;
   border-radius: 20px;
   background: #fff;
