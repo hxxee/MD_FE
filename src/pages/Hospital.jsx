@@ -21,19 +21,13 @@ const Hospital = () => {
             alt="back"
             onClick={goBack}
           />
-          <img
-            id="back"
-            src={`${process.env.PUBLIC_URL}/images/Back.svg`}
-            alt="back"
-            onClick={goBack}
-          />
         </H.Icons>
         <H.Title>병원선택</H.Title>
       </H.Header>
 
       <H.Content>
         <H.Component>
-          <H.C_title>경북대학교병원</H.C_title>
+          <H.C_title>경북대학교 병원</H.C_title>
           <H.C_sub>정형외과</H.C_sub>
           <H.C_wrapper>
             <H.C_inform>
